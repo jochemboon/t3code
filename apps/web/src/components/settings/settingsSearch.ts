@@ -1006,7 +1006,7 @@ export const SETTINGS_SEARCH_ITEMS = [
     id: "privacy-policy",
     title: msg("Privacy policy"),
     to: "/settings/about",
-    searchTerms: [msg("telemetry analytics usage data tracking legal opt out")],
+    searchTerms: [msg("legal data privacy")],
   },
   {
     id: "telemetry-export",
@@ -1028,9 +1028,7 @@ export const SETTINGS_SEARCH_ITEMS = [
     to: "/settings/labs",
     scope: "environment-defaults",
     agentFeedbackOnly: true,
-    searchTerms: [
-      msg("report bug problem t3 team send feedback agents tools automatic when i ask"),
-    ],
+    searchTerms: [msg("report bug problem feedback agents tools automatic when i ask")],
   },
   {
     id: "open-source-licenses",

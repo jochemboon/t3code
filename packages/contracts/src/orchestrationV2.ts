@@ -1899,9 +1899,9 @@ const OrchestrationV2LinkRequestFields = {
 } as const;
 
 /**
- * A report the user asked the agent to send to the T3 team, shown for approval. Send stores and
- * sends exactly `preview`, with `conversationTrace` as its trace if the user included the
- * conversation. Once answered, the card keeps only what was sent.
+ * A feedback report the user asked the agent for, shown for approval. Save stores exactly
+ * `preview` on this machine, with `conversationTrace` as its trace if the user included the
+ * conversation. Once answered, the card keeps only what was saved.
  */
 const OrchestrationV2FeedbackRequestFields = {
   type: Schema.Literal("feedback_request"),

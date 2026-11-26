@@ -134,7 +134,7 @@ const policies = (): ReadonlyArray<Policy> => [
   {
     id: "Telemetry",
     title: "Allow usage data",
-    help: "Disabled stops T3 Code from sending product usage data and relay connection traces. Enabled cannot turn them on for a user who turned them off.",
+    help: "Kept for compatibility with existing policies. This build sends no usage data, so the setting has no effect.",
     toggle: "Telemetry",
   },
   {

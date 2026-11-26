@@ -6,7 +6,7 @@ import { scrubFeedbackText } from "./scrubFeedback.ts";
 
 const MAX_ENTRIES = 80;
 const MAX_TEXT_CHARS = 1_000;
-// Keeps one `agent.feedback` event small next to the 20 a telemetry batch holds.
+// Keeps a stored report and its card small.
 const FEEDBACK_TRACE_MAX_BYTES = 16_000;
 
 export const FEEDBACK_TRACE_ITEM_TYPES = [

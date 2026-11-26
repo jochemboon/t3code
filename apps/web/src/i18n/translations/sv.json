@@ -60,9 +60,7 @@
   "d026a85e2e50e675": "Installera GitCafe CLI med {install} och kör sedan {login}, spara en token i Inställningar eller ange {variable} på servern.",
   "22d3c0c48a34b5b3": "Installera TanStack Source CLI med {install} och kör sedan {login}, spara en token i Inställningar eller ange {variable} på servern.",
   "756c80ad262ef315": "Väntar i den ursprungliga tråden",
-  "d8df14f9905f38eb": "Skickat",
   "e7c59185f8ab3987": "Inte skickat",
-  "b54ddec9084fa955": "Stängd utan att skickas",
   "fbaa7ab5da716e50": "Bugg",
   "01bac997ea55272e": "Otydligt",
   "0f53bc8f74dfe56a": "Funktion saknas",
@@ -3116,7 +3114,6 @@
   "c646366e142ba05f": "Skrivbordsappens WSL-status är inte tillgänglig.",
   "228dcd284ea651b3": "Det gick inte att läsa in WSL-statusen.",
   "b08d105dd2553f8d": "Projektet visades inte i skrivbordsappen.",
-  "7a4b3f3b83e121d7": "{organization} har stängt av anonym användningsdata.",
   "d85822b18e9475df": "Hanteras av {organization}.",
   "a6dd531d58080010": "Anslut till den här servern för att söka efter versioner.",
   "314cdccee9c14774": "Den här servern stöder inte registeruppslag. Uppdatera den innan du byter spår.",
@@ -3649,13 +3646,8 @@
   "c53bc5a4b0314342": "Nästa media",
   "2950b1424a3cddf5": "Återanslut till den här miljön och öppna mediet igen.",
   "ef638bf1479a5461": "Miljön returnerade en ogiltig media-URL.",
-  "3ccfbf7e86868c35": "Återkoppling till T3-teamet",
-  "4e0710d19dfc2e7e": "Skicka den här rapporten till T3-teamet?",
-  "87d0ae0723ba75d1": "Det här är allt som lämnar din dator. Inget skickas förrän du trycker på Skicka.",
   "bf19826f81484328": "Ta med konversationen",
   "260c6b45f52d2f27": "Lägger till texten i dina meddelanden och agentens svar under {textTurns, plural, one {den senaste omgången} other {de senaste {textTurns} omgångarna}}.",
-  "ddb7e6f8ce99e657": "Bara den som kan köra agenter på den här datorn kan skicka eller avböja rapporten.",
-  "03c1eb603c112f47": "Skicka inte",
   "653405e4ed498d9f": "Skicka",
   "262955d6eb632f9b": "Urklipps-API:t är inte tillgängligt vid kopiering av gästlänken.",
   "f1a4f2b04cdbb4ef": "Kunde inte kopiera gästlänken till urklipp.",
@@ -6258,26 +6250,6 @@
   ],
   "216ab7514aea1d61": "Starta utan agent",
   "501ce2d99da8bfd1": "Konfigurera en agent för att starta.",
-  "71f3822326109c8e": [
-    "T3 Code samlar in anonym användningsdata för att förbättra appen. Se",
-    " ",
-    {
-      "t": "a",
-      "i": 1,
-      "c": "integritetspolicyn"
-    },
-    " för att välja bort det."
-  ],
-  "b33f35083757b42c": [
-    "Se",
-    " ",
-    {
-      "t": "a",
-      "i": 1,
-      "c": "integritetspolicyn"
-    },
-    "."
-  ],
   "f77d000c0710f066": "Aktivera",
   "4ed27bf946e504db": "Konfigurera",
   "7a26eaacff0607f7": [
@@ -8927,8 +8899,6 @@
   "90a258fff61fd77e": "Av",
   "4060244a7079a0d2": "När jag ber om det",
   "e88c9d8769544731": "Automatisk",
-  "f29d1dade4dde8aa": "Agenter skickar ingen återkoppling till T3-teamet.",
-  "93c4c53562d30a98": "När du ber om det visar agenter en kort rapport om T3 Code och skickar den till T3-teamet om du godkänner den.",
   "cd9ee803e8727017": "Agenter rapporterar även problem med T3 Code som de själva stöter på, till exempel ett T3-verktyg som misslyckats.",
   "45fa271ea0e1ac8e": "Beta",
   "3a678332fc7142f7": "Gruppera trådar i sidofältet i projektmappar. Fästa trådar ligger överst, och Snoozade och Klara ligger under mapparna.",
@@ -10275,8 +10245,6 @@
   "c424bee294b9f778": "Miljön hanteras av {organization}. Vissa inställningar och funktioner följer dess policy.",
   "82d9538af590f58c": "Se dina agenter, importera projekt och konfigurera din telefon.",
   "6a48fd0a37e725a1": "Juridiskt",
-  "d6d3ea46ac979e1c": "Hur vi hanterar dina data, inklusive de anonyma användningsdata som T3 Code samlar in.",
-  "e741b1ab9396053a": "Hur vi hanterar dina data. {telemetryOff}",
   "0bffbbf4d7f780c0": "Meddelanden för beroenden, resurser och valfria verktyg som T3 Code använder.",
   "e39a57514be028e9": "Granska",
   "7c0512387c3a42ea": "Stable",
@@ -11963,10 +11931,8 @@
   "6310b97b04ef239f": "Välkomstsida",
   "df9fa3a9cb004b9b": "introduktion konfiguration första start kom igång agenter importera projekt",
   "3188bc3b3c4508bc": "Integritetspolicy",
-  "901a823214edc8c4": "telemetri analys användningsdata spårning juridiskt avböj",
   "82136480255a5106": "OTel OTLP telemetri export slutpunkter loggar spår mätvärden Grafana",
   "659d081051faf7ff": "loggar spår processer resurshistorik fel spans cpu minne",
-  "5eaeacfa9f82051a": "rapport bugg problem t3 team skicka återkoppling agenter verktyg automatiskt när jag ber om det",
   "f537f91e1ee41d47": "kortkommandon snabbtangenter kommandon tangentbindningar json",
   "1ba01e7ceed64b95": "fönster fånga skärmbild",
   "279b1cceb779ff38": "Ta med apptext",
@@ -13022,5 +12988,18 @@
       "v": "v"
     },
     " till i Länkade objekt"
-  ]
+  ],
+  "a4c62f9830ae17c9": "Hur vi hanterar dina data.",
+  "0f0ffe9a31c939a3": "juridik data integritet",
+  "22043abd598eaac5": "Sparad",
+  "b0b23071e2f3dc31": "Kasserad",
+  "832999bbd8acaaa1": "Stängd utan att sparas",
+  "5093c343f528d22e": "Feedback om T3 Code",
+  "9a71059dea2247af": "Spara den här rapporten om T3 Code?",
+  "bed0ad9810dc35e4": "Rapporter stannar på den här datorn. Inget sparas förrän du trycker på Spara.",
+  "f5e92a88c1752e57": "Bara den som kan köra agenter på den här datorn kan spara eller kassera den.",
+  "4a7f8b1f1b73dedc": "Spara",
+  "c92c16628a6c3b0b": "Agenter skriver inga feedbackrapporter.",
+  "944b1bdf02c760a6": "När du ber om det visar agenter en kort rapport om T3 Code och sparar den på den här datorn om du godkänner.",
+  "1fc0e6d8b8d71159": "rapport bugg problem feedback agenter verktyg automatisk när jag ber"
 }

@@ -24,19 +24,23 @@ export function feedbackRequestDisplay(
         ? { kind: "pending" }
         : { kind: "pending-elsewhere", label: resolve(msg("Waiting in the original thread")) };
     case "sent":
-      return { kind: "answered", outcome: "sent", label: resolve(msg("Sent")) };
+      return {
+        kind: "answered",
+        outcome: "sent",
+        label: resolve(msg("Saved", { $context: "feedback report kept on this machine" })),
+      };
     case "declined":
-      return { kind: "answered", outcome: "not-sent", label: resolve(msg("Not sent")) };
+      return { kind: "answered", outcome: "not-sent", label: resolve(msg("Discarded")) };
     case "cancelled":
       return {
         kind: "answered",
         outcome: "not-sent",
-        label: resolve(msg("Closed without sending")),
+        label: resolve(msg("Closed without saving")),
       };
   }
 }
 
-/** Exactly what Send sends: the outline, or with the conversation included, its text too. */
+/** Exactly what Save stores: the outline, or with the conversation included, its text too. */
 export function feedbackCardPreview(
   item: Pick<FeedbackRequestItem, "preview" | "conversationTrace">,
   includeConversation: boolean,
