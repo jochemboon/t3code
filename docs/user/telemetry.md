@@ -6,7 +6,7 @@ Network traffic that remains is functional: your chosen providers, update checks
 
 ## Agent feedback
 
-Optional tool for agents to write up T3 Code bugs or missing capabilities. Configure it in **Settings → Labs → Agent feedback**. Reports are scrubbed of file paths, usernames, hostnames, git remotes, and secret-like strings, then stored on this machine only; nothing is sent. Approved cards show **Not sent**. Inspect stored reports with `t3 feedback list [--json]`.
+Optional tool for agents to write up T3 Code bugs or missing capabilities. Configure it in **Settings → Labs → Agent feedback**. Reports are scrubbed of file paths, usernames, hostnames, git remotes, and secret-like strings, then stored on this machine only; nothing is sent. Approved reports show as **Saved**. Inspect stored reports with `t3 feedback list [--json]`.
 
 ## Agent activity for mobile notifications
 

@@ -30,7 +30,7 @@ import { ThemedSwitch } from "../../components/ui/ThemedSwitch";
 import { serverEnvironment } from "../../state/server";
 import { useAtomCommand } from "../../state/use-atom-command";
 
-const TITLE = msg("Feedback for the T3 team");
+const TITLE = msg("Feedback about T3 Code");
 const LOCK_SYMBOL: AppSymbolName = { ios: "lock", android: "lock" };
 
 export function FeedbackRequestCard(props: {
@@ -118,10 +118,10 @@ function PendingFeedbackRequest(props: {
     <View className="mb-3 gap-3 rounded-[20px] border border-border bg-card-alt p-4">
       <View className="gap-1">
         <Text className="font-t3-bold text-base text-foreground">
-          <T>Send this report to the T3 team?</T>
+          <T>Save this report about T3 Code?</T>
         </Text>
         <Text className="font-sans text-xs text-foreground-muted">
-          <T>This is everything that leaves your machine. Nothing is sent unless you tap Send.</T>
+          <T>Reports stay on this machine. Nothing is saved unless you tap Save.</T>
         </Text>
       </View>
       {props.item.conversationTrace !== undefined ? (
@@ -149,18 +149,18 @@ function PendingFeedbackRequest(props: {
         </Text>
       ) : !canAnswer ? (
         <Text className="font-sans text-xs text-foreground-muted">
-          <T>Only someone who can run agents on this machine can send or decline it.</T>
+          <T>Only someone who can run agents on this machine can save or discard it.</T>
         </Text>
       ) : null}
       <Button
-        label={gt("Send")}
+        label={gt("Save", { $context: "verb, keeps a report" })}
         tone="primary"
         fullWidth
         disabled={submitting || !canAnswer}
         onPress={() => void send("send")}
       />
       <Button
-        label={gt("Don't send")}
+        label={gt("Discard")}
         tone="text"
         disabled={submitting || !canAnswer}
         onPress={() => void send("decline")}

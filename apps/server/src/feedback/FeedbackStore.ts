@@ -275,10 +275,7 @@ const make = Effect.gen(function* () {
           // Stored before its card was settled, by a crash or a failed record: settle it now.
           const [stored] = yield* sql<{ readonly sent: number; readonly trace: string | null }>`
             SELECT sent, trace FROM agent_feedback WHERE id = ${card.reportId}`;
-          if (stored !== undefined) {
-            if (stored.sent !== 1) return yield* settle("cancelled");
-            return yield* settle("sent", yield* decodeTrace(stored.trace));
-          }
+          if (stored !== undefined) return yield* settle("sent", yield* decodeTrace(stored.trace));
           if (input.answer === "decline") return yield* settle("declined");
 
           const trace =
@@ -302,8 +299,8 @@ const make = Effect.gen(function* () {
             yield* settle("cancelled");
             return yield* fail("feedback_off");
           }
-          // The report stays on this machine, so the card says not sent.
-          yield* settle("cancelled");
+          // `sent` is the approved status; clients show it as saved, since nothing leaves the machine.
+          yield* settle("sent", trace);
         }),
       )
       .pipe(

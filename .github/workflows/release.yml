@@ -546,7 +546,7 @@ jobs:
       # skips the Linux browser secret helper, which this artifact does not
       # carry; each Linux package job compiles its own per arch.
       # The release channel is already stable, nightly, or preview. Builds in
-      # other repositories report "dev" telemetry.
+      # other repositories use the "dev" channel.
       - name: Build JS bundle
         env:
           T3CODE_TELEMETRY_CHANNEL: ${{ github.repository == 'pingdotgg/t3code' && needs.preflight.outputs.release_channel || 'dev' }}

@@ -30,7 +30,7 @@ import { Collapsible, CollapsiblePanel, CollapsibleTrigger } from "../ui/collaps
 import { Switch } from "../ui/switch";
 import { WorkLogRow } from "./WorkLog";
 
-const TITLE = msg("Feedback for the T3 team");
+const TITLE = msg("Feedback about T3 Code");
 
 export function FeedbackRequestCard(props: {
   readonly environmentId: EnvironmentId;
@@ -126,10 +126,10 @@ function PendingFeedbackRequest(props: {
       <div className="flex min-w-0 flex-col gap-1">
         <h3 className="flex items-center gap-1.5 text-sm font-medium text-foreground">
           <MessageSquareIcon className="size-3.5 shrink-0 text-icon-muted" aria-hidden />
-          <T>Send this report to the T3 team?</T>
+          <T>Save this report about T3 Code?</T>
         </h3>
         <p className="text-xs text-muted-foreground">
-          <T>This is everything that leaves your machine. Nothing is sent unless you press Send.</T>
+          <T>Reports stay on this machine. Nothing is saved unless you press Save.</T>
         </p>
       </div>
       {props.item.conversationTrace !== undefined ? (
@@ -157,7 +157,7 @@ function PendingFeedbackRequest(props: {
         </p>
       ) : !canAnswer ? (
         <p className="text-xs text-muted-foreground">
-          <T>Only someone who can run agents on this machine can send or decline it.</T>
+          <T>Only someone who can run agents on this machine can save or discard it.</T>
         </p>
       ) : null}
       <div className="flex items-center justify-end gap-2">
@@ -168,10 +168,10 @@ function PendingFeedbackRequest(props: {
           disabled={disabled}
           onClick={() => void send("decline")}
         >
-          <T>Don't send</T>
+          <T>Discard</T>
         </Button>
         <Button type="button" size="sm" disabled={disabled} onClick={() => void send("send")}>
-          <T>Send</T>
+          <T context="verb, keeps a report">Save</T>
         </Button>
       </div>
     </section>
